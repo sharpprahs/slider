@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+.container_slider{
+	display: flex;
+	flex-direction: column;
+	max-width: 1205px;
+	margin: 0px auto;
+	padding-top: 45px;
+	gap: 40px;
+	align-items: center;
+	padding-bottom: 45px;
+}
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.mr{
+	 font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+:root {
+    --color_text: #333333;
+     --color-buttons: #198496;
+}
+.content{
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	animation: ani 2s forwards;
+}
+.text{
+    color: var(--color_text);
+    font-size: clamp(1rem, 0.9011rem + 0.4946vw, 1.375rem);
+    display: flex;
+    flex-direction: column;
+    word-break: break-all ;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+    min-height: 150px;
+    max-height: 150px;
+    width: 60%;
+}
+.text span{
+	margin: auto;
+}
+.reviews{
+    white-space: nowrap;
+    color: var(--color_text);
+  font-size: clamp(1.375rem, 1.0452rem + 1.6488vw, 2.625rem);
+}
+.named{
+	display: flex;
+	flex-direction: row;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 280px;
+	justify-content: space-between;
+}
+.column_named_link{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.named a {
+	color: var(--color-buttons);
+	text-decoration: none;
+}
+.left{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	position: relative;
+	height: 25px;
+	width: 25px;
+border-radius: 450px;
+background-color: green;
+cursor: pointer;
+}
+.left::before{
+content: "";
+position: absolute;
+width: 20px;
+height: 20px;
+background-size: contain;
+transform: translateY(-50%) translateX(-50%);
+top: 50%;
+left: 50%;
+background-image: url(../images/lefts.svg);
+background-repeat: no-repeat;
+}
+.right{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	position: relative;
+	height: 25px;
+	width: 25px;
+border-radius: 450px;
+background-color: green;
+cursor: pointer;
+}
+.right::before{
+content: "";
+position: absolute;
+width: 20px;
+height: 20px;
+background-size: contain;
+transform: translateY(-50%) translateX(-50%)  rotate(-180deg);
+top: 50%;
+left: 50%;
+background-image: url(../images/lefts.svg);
+background-repeat: no-repeat;
+}
